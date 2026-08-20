@@ -69,6 +69,7 @@ installation needed.
 | EEUC full validation vs. all baselines (§7.5, Table 3, Fig. 4) | `experiments/final_remaining_experiments.py` | `results/final_remaining_results/` |
 | Energy-budget and sink-topology sensitivity (§7.6, Fig. 5) | `experiments/final_remaining_experiments.py` (Priorities 2–3) | `results/final_remaining_results/` |
 | Fair hole-risk comparison (§7.7, Fig. 6) | `experiments/holerisk_leach_heed.py` | `results/holerisk_leach_heed_results/` |
+| Relay-burden fairness, Jain's index (§7.8, Table 5) | `experiments/run_fairness.py` (uses `experiments/fairness_sweep_lib.py`) | `results/fairness_results/` |
 | Blended-objective tradeoff, N=500 completion (§8.3) | `experiments/final_remaining_experiments.py` (Priority 4) | `results/final_remaining_results/blend_N500_alpha*.json` |
 | mincost-objective correctness validation | `experiments/validate_mincost_objective.py` | — |
 
