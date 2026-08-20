@@ -1,0 +1,58 @@
+[06:16:59] === STEP 1: LEACH (fixed), full five-point sweep ===
+[06:17:05]   N=30: mean=454.4  std=62.5  time=5.0s
+[06:17:14]   N=60: mean=549.0  std=41.9  time=9.0s
+[06:17:30]   N=100: mean=642.7  std=32.6  time=16.0s
+[06:18:05]   N=200: mean=739.4  std=23.3  time=35.0s
+[06:19:36]   N=500: mean=797.3  std=14.8  time=91.0s
+[06:19:36] 
+[06:19:36] === reference: original (buggy) LEACH values ===
+[06:19:36]   N=30: original=587.9  fixed=454.4  change=-22.7%
+[06:19:36]   N=60: original=691.1  fixed=549.0  change=-20.6%
+[06:19:36]   N=100: original=755.5  fixed=642.7  change=-14.9%
+[06:19:36]   N=200: original=814.9  fixed=739.4  change=-9.3%
+[06:19:36]   N=500: original=845.8  fixed=797.3  change=-5.7%
+[06:19:36] 
+[06:19:36] === STEP 2: mincost-v3 vs LEACH(fixed), full sweep ===
+[06:19:36]   mincost-v3 N=30: [reused from final_strategy_results/N30_mincost_v3.json] mean=643.5
+[06:19:36]   mincost-v3 N=60: [reused from final_strategy_results/N60_mincost_v3.json] mean=694.3
+[06:19:36]   mincost-v3 N=100: [reused from mincost_validation_results/N100_v3_mincost.json] mean=718.4
+[06:19:36]   mincost-v3 N=200: [reused from final_strategy_results/N200_mincost_v3.json] mean=768.2
+[06:19:36]   mincost-v3 N=500: [reused from mincost_validation_results/N500_v3_mincost.json] mean=768.3
+[06:19:36] 
+[06:19:36] --- Updated significance: mincost-v3 vs LEACH(fixed) ---
+[06:19:36]   N=30: mincost-v3=643.5  LEACH(fixed)=454.4  ratio=1.416  v3 WINS  p=0.00282  d=1.33  SIG
+[06:19:36]   N=60: mincost-v3=694.3  LEACH(fixed)=549.0  ratio=1.265  v3 WINS  p=0.00078  d=1.454  SIG
+[06:19:36]   N=100: mincost-v3=718.4  LEACH(fixed)=642.7  ratio=1.118  v3 WINS  p=0.03802  d=0.869  SIG
+[06:19:36]   N=200: mincost-v3=768.2  LEACH(fixed)=739.4  ratio=1.039  v3 WINS  p=0.29965  d=0.425  n.s.
+[06:19:36]   N=500: mincost-v3=768.3  LEACH(fixed)=797.3  ratio=0.964  v3 loses  p=0.0343  d=-0.815  SIG
+[06:19:36]   TREND: Spearman rho=-1.0  p=0.0  SIGNIFICANT
+[06:19:36] 
+[06:19:36] === STEP 3: frozen NEET-v3 (fairness) vs LEACH(fixed), full sweep ===
+[06:19:36]   frozen-v3 N=30: [reused from n_sweep_v3_vs_protocols_results/N30_v3_flow.json] mean=578.5
+[06:19:36]   frozen-v3 N=60: [reused from n_sweep_v3_vs_protocols_results/N60_v3_flow.json] mean=685.8
+[06:19:36]   frozen-v3 N=100: [reused from n_sweep_v3_vs_protocols_results/N100_v3_flow.json] mean=690.5
+[06:19:36]   frozen-v3 N=200: [reused from n_sweep_v3_vs_protocols_results/N200_v3_flow.json] mean=623.6
+[06:19:36]   frozen-v3 N=500: [reused from n_sweep_v3_vs_protocols_results/N500_v3_flow.json] mean=520.2
+[06:19:36] 
+[06:19:36] --- Updated significance: frozen NEET-v3 vs LEACH(fixed) ---
+[06:19:36]   N=30: frozen-v3=578.5  LEACH(fixed)=454.4  ratio=1.273  v3 WINS  p=0.03618  d=1.022  SIG
+[06:19:36]   N=60: frozen-v3=685.8  LEACH(fixed)=549.0  ratio=1.249  v3 WINS  p=0.00097  d=1.441  SIG
+[06:19:36]   N=100: frozen-v3=690.5  LEACH(fixed)=642.7  ratio=1.074  v3 WINS  p=0.13538  d=0.618  n.s.
+[06:19:36]   N=200: frozen-v3=623.6  LEACH(fixed)=739.4  ratio=0.843  v3 loses  p=2e-05  d=-2.248  SIG
+[06:19:36]   N=500: frozen-v3=520.2  LEACH(fixed)=797.3  ratio=0.652  v3 loses  p=0.0  d=-10.141  SIG
+[06:19:36]   TREND: Spearman rho=-1.0  p=0.0  SIGNIFICANT
+[06:19:36] 
+[06:19:36] === STEP 4: static-CT vs LEACH(fixed) ===
+[06:19:37]   static-CT N=30: computed  mean=570.1  time=1.0s
+[06:19:38]   static-CT N=60: computed  mean=685.1  time=1.0s
+[06:19:39]   static-CT N=100: computed  mean=689.6  time=2.0s
+[06:19:43]   static-CT N=200: computed  mean=622.6  time=4.0s
+[06:19:58]   static-CT N=500: computed  mean=519.2  time=15.0s
+[06:19:58]   N=30: static-CT=570.1  LEACH(fixed)=454.4  CT WINS  p=0.13  d=0.911  n.s.
+[06:19:58]   N=60: static-CT=685.1  LEACH(fixed)=549.0  CT WINS  p=0.00113  d=1.43  SIG
+[06:19:58]   N=100: static-CT=689.6  LEACH(fixed)=642.7  CT WINS  p=0.14085  d=0.607  n.s.
+[06:19:58]   N=200: static-CT=622.6  LEACH(fixed)=739.4  CT loses  p=1e-05  d=-2.267  SIG
+[06:19:58]   N=500: static-CT=519.2  LEACH(fixed)=797.3  CT loses  p=0.0  d=-10.177  SIG
+[06:19:58] 
+[06:19:58] === ALL STEPS COMPLETE ===
+[06:19:58] === DONE ===

@@ -1,0 +1,30 @@
+[12:52:18] === v3 calibration pipeline: starting ===
+[12:52:18] STAGE 1: finding Psi_c knee at full episode length (3000 rounds)
+[12:52:19]   round   mean_Psi   n
+[12:52:19]      50   0.00090   10
+[12:52:19]     100   0.00354   10
+[12:52:19]     200   0.01402   10
+[12:52:19]     300   0.03143   10
+[12:52:19]     400   0.05579   10
+[12:52:19]     600   0.08840   6
+[12:52:19]   matched window (full n=10): rounds [50, 100, 200, 300, 400]
+[12:52:19]   NOTE: no deceleration below 50% of peak rate found within the matched window -- growth was still accelerating or steady throughout; using the last matched-window point as a conservative (safe, not artificially low) Psi_c.
+[12:52:19]   peak growth rate at round 400 (0.000244/round); knee at round 400
+[12:52:19] STAGE 1 result: Psi_c = 0.05579 (at round 400)
+[12:52:19] STAGE 2: recalibrating R_c (non-circular structural-hole method)
+[13:01:18]   structural hole events captured: 559  (time=539s)
+[13:01:18]   10th percentile R_h at holes: 1.02488  (median: 1.18205)
+[13:01:18] STAGE 3: re-verifying beta (bounded range, avoiding the v2 unbounded-sweep pitfall)
+[13:07:13]   beta=0.5: separation=0.1707
+[13:13:14]   beta=1.0: separation=0.2099
+[13:19:06]   beta=1.5: separation=0.2995
+[13:19:06] STAGE 3 result: beta = 1.5
+[13:19:06] STAGE 4: final validation with Psi_c=0.0558, R_c=1.0249, beta=1.5
+[13:21:45]   N=100: mean HND=620.7  std=83.7  n=15  time=160s
+[14:03:09]   N=500: mean HND=433.0  std=28.4  n=15  time=2484s
+[14:03:09] 
+  Reference (borrowed v2 constants, from Section 8 of the v3 spec):
+[14:03:09]   N=100: mean=629.4 (n=20)   N=500: mean=434.7 (n=12)
+[14:03:09] 
+=== ALL STAGES COMPLETE in 1.18 hours ===
+[14:03:09] Final calibrated constants: Psi_c=0.05579  R_c=1.02488  beta=1.5

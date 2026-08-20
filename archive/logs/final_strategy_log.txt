@@ -1,0 +1,53 @@
+[09:35:54] === FILLING GAPS (reusing prior results where possible) ===
+[09:37:44]   N=30 mincost_v3: [computed fresh] mean=643.5  std=184.0  n=15  time=110.0s
+[09:37:46]   N=30 static_CT: [computed fresh] mean=570.1  std=161.8  n=15  time=2.0s
+[09:37:46]   N=30 LEACH: [reused from n_sweep_v3_vs_protocols_results/N30_LEACH.json] mean=587.9  n=15
+[09:37:46]   N=30 HEED: [reused from n_sweep_v3_vs_protocols_results/N30_HEED.json] mean=565.7  n=15
+[09:41:49]   N=60 mincost_v3: [computed fresh] mean=694.3  std=130.0  n=15  time=243.0s
+[09:41:51]   N=60 static_CT: [computed fresh] mean=685.1  std=123.1  n=15  time=2.0s
+[09:41:51]   N=60 LEACH: [reused from n_sweep_v3_vs_protocols_results/N60_LEACH.json] mean=691.1  n=15
+[09:41:51]   N=60 HEED: [reused from n_sweep_v3_vs_protocols_results/N60_HEED.json] mean=592.5  n=15
+[09:41:51]   N=100 mincost_v3: [reused from mincost_validation_results/N100_v3_mincost.json] mean=718.4  n=15
+[09:41:53]   N=100 static_CT: [computed fresh] mean=689.6  std=100.4  n=15  time=3.0s
+[09:41:53]   N=100 LEACH: [reused from n_sweep_v3_vs_protocols_results/N100_LEACH.json] mean=755.5  n=15
+[09:41:53]   N=100 HEED: [reused from n_sweep_v3_vs_protocols_results/N100_HEED.json] mean=625.5  n=15
+[10:07:50]   N=200 mincost_v3: [computed fresh] mean=768.2  std=89.5  n=15  time=1557.0s
+[10:07:56]   N=200 static_CT: [computed fresh] mean=622.6  std=66.4  n=15  time=5.0s
+[10:07:56]   N=200 LEACH: [reused from n_sweep_v3_vs_protocols_results/N200_LEACH.json] mean=814.9  n=15
+[10:07:56]   N=200 HEED: [reused from n_sweep_v3_vs_protocols_results/N200_HEED.json] mean=688.7  n=15
+[10:07:56]   N=500 mincost_v3: [reused from mincost_validation_results/N500_v3_mincost.json] mean=768.3  n=15
+[10:08:20]   N=500 static_CT: [computed fresh] mean=519.2  std=34.3  n=15  time=24.0s
+[10:08:20]   N=500 LEACH: [reused from n_sweep_v3_vs_protocols_results/N500_LEACH.json] mean=845.8  n=15
+[10:08:20]   N=500 HEED: [reused from n_sweep_v3_vs_protocols_results/N500_HEED.json] mean=778.4  n=15
+[10:08:20] 
+[10:08:20] === SUMMARY TABLE ===
+[10:08:20] N     mincost-v3  static-CT  LEACH     HEED      v3/CT     v3/LEACH  v3/HEED
+[10:08:20] 30    643.5       570.1      587.9     565.7     1.129x    1.095x    1.138x
+[10:08:20] 60    694.3       685.1      691.1     592.5     1.013x    1.005x    1.172x
+[10:08:20] 100   718.4       689.6      755.5     625.5     1.042x    0.951x    1.148x
+[10:08:20] 200   768.2       622.6      814.9     688.7     1.234x    0.943x    1.115x
+[10:08:20] 500   768.3       519.2      845.8     778.4     1.480x    0.908x    0.987x
+[10:08:20] 
+[10:08:20] === PAIRWISE SIGNIFICANCE, per N ===
+[10:08:20]   N=30 mincost_v3 vs static_CT: v3 WINS  p=0.31945  d=0.409  n.s.
+[10:08:20]   N=30 mincost_v3 vs LEACH: v3 WINS  p=0.40653  d=0.392  n.s.
+[10:08:20]   N=30 mincost_v3 vs HEED: v3 WINS  p=0.2627  d=0.548  n.s.
+[10:08:20]   N=60 mincost_v3 vs static_CT: v3 WINS  p=0.80346  d=0.07  n.s.
+[10:08:20]   N=60 mincost_v3 vs LEACH: v3 WINS  p=0.95038  d=0.032  n.s.
+[10:08:20]   N=60 mincost_v3 vs HEED: v3 WINS  p=0.03999  d=1.02  SIG
+[10:08:20]   N=100 mincost_v3 vs static_CT: v3 WINS  p=0.53378  d=0.258  n.s.
+[10:08:20]   N=100 mincost_v3 vs LEACH: v3 loses  p=0.21332  d=-0.421  n.s.
+[10:08:20]   N=100 mincost_v3 vs HEED: v3 WINS  p=0.00698  d=1.063  SIG
+[10:08:20]   N=200 mincost_v3 vs static_CT: v3 WINS  p=0.00024  d=1.784  SIG
+[10:08:20]   N=200 mincost_v3 vs LEACH: v3 loses  p=0.15234  d=-0.683  n.s.
+[10:08:20]   N=200 mincost_v3 vs HEED: v3 WINS  p=0.01353  d=1.165  SIG
+[10:08:20]   N=500 mincost_v3 vs static_CT: v3 WINS  p=0.0  d=5.911  SIG
+[10:08:20]   N=500 mincost_v3 vs LEACH: v3 loses  p=2e-05  d=-2.082  SIG
+[10:08:20]   N=500 mincost_v3 vs HEED: v3 loses  p=0.46743  d=-0.277  n.s.
+[10:08:20] 
+[10:08:20] === TREND TESTS ===
+[10:08:20]   vs static_CT: Spearman rho=0.7  p=0.18812  not significant 
+[10:08:20]   vs LEACH: Spearman rho=-1.0  p=0.0  SIGNIFICANT DECREASING
+[10:08:20]   vs HEED: Spearman rho=-0.7  p=0.18812  not significant 
+[10:08:20] 
+[10:08:20] === DONE ===

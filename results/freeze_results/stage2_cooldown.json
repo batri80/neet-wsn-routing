@@ -1,0 +1,61 @@
+{
+  "best_cooldown": 30,
+  "all_results": {
+    "5": {
+      "mean_hnd": 256.8,
+      "std_hnd": 76.69654490262256,
+      "mean_reconfigs": 580.25,
+      "n_completed": 20,
+      "n_timeouts": 0,
+      "elapsed": 2652.4693648815155
+    },
+    "10": {
+      "mean_hnd": 247.45,
+      "std_hnd": 77.19616246938703,
+      "mean_reconfigs": 297.65,
+      "n_completed": 20,
+      "n_timeouts": 0,
+      "elapsed": 1371.9844930171967
+    },
+    "15": {
+      "mean_hnd": 259.75,
+      "std_hnd": 89.170552874814,
+      "mean_reconfigs": 200.0,
+      "n_completed": 20,
+      "n_timeouts": 0,
+      "elapsed": 943.2750630378723
+    },
+    "20": {
+      "mean_hnd": 257.6,
+      "std_hnd": 91.3013691025496,
+      "mean_reconfigs": 150.0,
+      "n_completed": 20,
+      "n_timeouts": 0,
+      "elapsed": 717.0283198356628
+    },
+    "30": {
+      "mean_hnd": 262.15,
+      "std_hnd": 92.2931606350113,
+      "mean_reconfigs": 100.0,
+      "n_completed": 20,
+      "n_timeouts": 0,
+      "elapsed": 498.3773658275604
+    },
+    "40": {
+      "mean_hnd": 255.9,
+      "std_hnd": 84.64980803285971,
+      "mean_reconfigs": 75.0,
+      "n_completed": 20,
+      "n_timeouts": 0,
+      "elapsed": 383.47195386886597
+    },
+    "60": {
+      "mean_hnd": 254.95,
+      "std_hnd": 87.72312978912687,
+      "mean_reconfigs": 50.0,
+      "n_completed": 20,
+      "n_timeouts": 0,
+      "elapsed": 273.14436197280884
+    }
+  }
+}

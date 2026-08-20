@@ -1,0 +1,47 @@
+[20:01:06] === EqOpt-K full-episode calibration freeze: starting ===
+[20:01:06] STAGE 1: finding Psi_c knee at full episode length (3000 rounds)
+[20:01:21]   round   mean_Psi   n
+[20:01:21]     100   0.02471   10
+[20:01:21]     200   0.04062   10
+[20:01:21]     400   0.05783   10
+[20:01:21]     600   0.06907   10
+[20:01:21]     800   0.07793   10
+[20:01:21]    1000   0.08736   10
+[20:01:21]    1500   0.12256   10
+[20:01:21]    2000   0.15327   10
+[20:01:21]    2500   0.17133   10
+[20:01:21] STAGE 1 result: knee at round 200, Psi_c = 0.04062
+[20:01:21] STAGE 2: sweeping cooldown period
+[20:45:34]   cooldown=  5: mean_HND=256.8  n_completed=20/20  timeouts=0  mean_reconfigs=580.25  time=2652s
+[21:08:26]   cooldown= 10: mean_HND=247.45  n_completed=20/20  timeouts=0  mean_reconfigs=297.65  time=1372s
+[21:24:09]   cooldown= 15: mean_HND=259.75  n_completed=20/20  timeouts=0  mean_reconfigs=200.0  time=943s
+[21:36:06]   cooldown= 20: mean_HND=257.6  n_completed=20/20  timeouts=0  mean_reconfigs=150.0  time=717s
+[21:44:24]   cooldown= 30: mean_HND=262.15  n_completed=20/20  timeouts=0  mean_reconfigs=100.0  time=498s
+[21:50:48]   cooldown= 40: mean_HND=255.9  n_completed=20/20  timeouts=0  mean_reconfigs=75.0  time=383s
+[21:55:21]   cooldown= 60: mean_HND=254.95  n_completed=20/20  timeouts=0  mean_reconfigs=50.0  time=273s
+[21:55:21] STAGE 2 result: best cooldown = 30
+[21:55:21] STAGE 3: recalibrating R_c at full length (cooldown=30)
+[22:03:12]   structural hole events captured: 378  (time=471s)
+[22:03:12]   10th percentile R_h at holes: 0.51290  (median: 0.65865)
+[22:03:12] STAGE 4: re-verifying beta at full length
+[22:06:54]   beta=0.5: separation=0.0342
+[22:10:43]   beta=1.0: separation=0.0530
+[22:15:11]   beta=2.0: separation=0.0643
+[22:15:11] STAGE 4 result: beta = 2.0
+[22:15:11] STAGE 5: final n=50 validation (Psi_c=0.0406, R_c=0.5129, cooldown=30, beta=2.0)
+[22:16:26]   static    : mean=261.7  std=98.6  n=50/50  timeouts=0  time=75s
+[22:35:24]   mincost   : mean=262.5  std=98.7  n=50/50  timeouts=0  time=1138s
+[22:43:40]   eqopt     : mean=245.0  std=83.9  n=50/50  timeouts=0  time=496s
+[23:04:44]   eqopt_k   : mean=279.9  std=100.2  n=50/50  timeouts=0  time=1264s
+[23:04:44] 
+  === eqopt_k vs each baseline ===
+[23:04:44]   eqopt_k vs static    : eqopt_k WINS  p=0.3293  d=0.182  not significant
+[23:04:44]   eqopt_k vs mincost   : eqopt_k WINS  p=0.3628  d=0.173  not significant
+[23:04:44]   eqopt_k vs eqopt     : eqopt_k WINS  p=0.0594  d=0.374  not significant
+[23:04:44] 
+=== ALL STAGES COMPLETE in 3.06 hours ===
+[23:04:44] Final calibrated constants: Psi_c=0.04062  R_c=0.51290  cooldown=30  beta=2.0
+[23:04:44] Significance results:
+[23:04:44]   eqopt_k vs static: p=0.3293  d=0.182  not significant
+[23:04:44]   eqopt_k vs mincost: p=0.3628  d=0.173  not significant
+[23:04:44]   eqopt_k vs eqopt: p=0.0594  d=0.374  not significant

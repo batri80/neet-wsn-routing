@@ -1,0 +1,13 @@
+static        : mean=239.6  std=86.5  n=20  time=19s
+mincost       : mean=239.7  std=86.9  n=20  time=288s
+eqopt         : mean=226.4  std=78.1  n=20  time=137s
+eqopt_h_0.05  : mean=236.2  std=86.4  n=20  time=207s
+eqopt_h_0.15  : mean=226.6  std=79.0  n=20  time=181s
+eqopt_h_0.30  : mean=226.7  std=78.7  n=20  time=159s
+eqopt_h_0.50  : mean=226.6  std=78.4  n=20  time=148s
+
+=== best eqopt_h variant vs baselines ===
+best tolerance: eqopt_h_0.05
+eqopt_h_0.05 vs static    : loses  p=0.8286  d=-0.037  not significant
+eqopt_h_0.05 vs mincost   : loses  p=0.8286  d=-0.039  not significant
+eqopt_h_0.05 vs eqopt     : WINS  p=0.5977  d=0.116  not significant

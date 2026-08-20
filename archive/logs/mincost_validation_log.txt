@@ -1,0 +1,25 @@
+[13:37:41] === PROFILING ===
+[13:38:19]   N=100 v3_mincost: 38.13s  HND=637
+[13:38:21]   N=100 LEACH: 1.89s  HND=711
+[13:38:22]   N=100 HEED: 1.36s  HND=577
+[13:48:18]   N=500 v3_mincost: 596.13s  HND=788
+[13:48:29]   N=500 LEACH: 10.99s  HND=868
+[13:48:39]   N=500 HEED: 10.07s  HND=784
+[13:48:39] 
+[13:48:39] Estimated total time: 164.6 minutes
+[13:48:39] 
+[13:48:39] === FULL VALIDATION ===
+[13:57:45]   N=100 v3_mincost: mean=718.4  std=114.5  n=15  time=546.0s
+[13:58:15]   N=100 LEACH: mean=755.5  std=36.8  n=15  time=30.0s
+[13:58:37]   N=100 HEED: mean=625.5  std=34.0  n=15  time=22.0s
+[18:49:31]   N=500 v3_mincost: mean=768.3  std=46.3  n=15  time=17453.0s
+[18:51:14]   N=500 LEACH: mean=845.8  std=21.0  n=15  time=103.0s
+[18:52:42]   N=500 HEED: mean=778.4  std=17.9  n=15  time=88.0s
+[18:52:42] 
+[18:52:42] === SIGNIFICANCE TESTS ===
+[18:52:42]   N=100 v3_mincost vs LEACH: v3 loses  p=0.21332  d=-0.421  n.s.
+[18:52:42]   N=100 v3_mincost vs HEED: v3 WINS  p=0.00698  d=1.063  SIG
+[18:52:42]   N=500 v3_mincost vs LEACH: v3 loses  p=2e-05  d=-2.082  SIG
+[18:52:42]   N=500 v3_mincost vs HEED: v3 loses  p=0.46743  d=-0.277  n.s.
+[18:52:42] 
+[18:52:42] === DONE ===

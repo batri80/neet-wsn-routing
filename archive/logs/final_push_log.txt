@@ -1,0 +1,4 @@
+eqopt     : mean=236.8  std=89.3  n=100/100  time=1045s
+eqopt_k   : mean=258.1  std=102.0  n=100/100  time=2477s
+
+eqopt_k vs eqopt (n=100): p=0.1181  d=0.220  not significant

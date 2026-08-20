@@ -1,0 +1,9 @@
+static    : mean=261.7  std=98.6  n=50  time=77s
+mincost   : mean=262.5  std=98.7  n=50  time=1167s
+eqopt     : mean=245.0  std=83.9  n=50  time=517s
+eqopt_k   : mean=277.6  std=102.0  n=50  time=1836s
+
+=== eqopt_k vs each baseline (Mann-Whitney + Cohen's d) ===
+eqopt_k vs static    : eqopt_k WINS  p=0.4712  d=0.158  not significant
+eqopt_k vs mincost   : eqopt_k WINS  p=0.5147  d=0.149  not significant
+eqopt_k vs eqopt     : eqopt_k WINS  p=0.1259  d=0.346  not significant

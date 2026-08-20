@@ -1,0 +1,22 @@
+K= 10: [computed+saved] mean=0.06640  std=0.00721  n=50/50  time=432.9s
+K= 20: [computed+saved] mean=0.06557  std=0.00715  n=50/50  time=941.4s
+K= 30: [computed+saved] mean=0.06366  std=0.00597  n=50/50  time=1634.2s
+K= 40: [computed+saved] mean=0.06215  std=0.00616  n=50/50  time=2528.4s
+K= 50: [computed+saved] mean=0.06104  std=0.00645  n=50/50  time=5437.5s
+
+=== All K values loaded. Running full analysis. ===
+
+=== Pairwise significance ===
+K=10 vs K=20: p=0.5813  d=0.115  not significant
+K=10 vs K=30: p=0.0932  d=0.409  not significant
+K=10 vs K=40: p=0.0067  d=0.627  SIGNIFICANT
+K=10 vs K=50: p=0.0007  d=0.776  SIGNIFICANT
+K=20 vs K=30: p=0.2837  d=0.286  not significant
+K=20 vs K=40: p=0.0148  d=0.507  SIGNIFICANT
+K=20 vs K=50: p=0.0019  d=0.658  SIGNIFICANT
+K=30 vs K=40: p=0.1868  d=0.247  not significant
+K=30 vs K=50: p=0.0575  d=0.419  not significant
+K=40 vs K=50: p=0.4566  d=0.175  not significant
+
+=== Trend check: Spearman correlation of K vs Psi_max (pooled) ===
+rho=-0.266  p=0.00002  SIGNIFICANT downward trend

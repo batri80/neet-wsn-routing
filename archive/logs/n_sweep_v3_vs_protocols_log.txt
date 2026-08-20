@@ -1,0 +1,78 @@
+[09:15:14] === PROFILING ===
+[09:15:16]   N=30 v3_flow: 1.91s  HND=462
+[09:15:16]   N=30 LEACH: 0.61s  HND=603
+[09:15:17]   N=30 HEED: 0.46s  HND=612
+[09:15:17]   N=30 PEGASIS: 0.1s  HND=173
+[09:15:20]   N=60 v3_flow: 3.15s  HND=578
+[09:15:21]   N=60 LEACH: 1.06s  HND=669
+[09:15:22]   N=60 HEED: 0.77s  HND=524
+[09:15:22]   N=60 PEGASIS: 0.1s  HND=90
+[09:15:30]   N=100 v3_flow: 8.49s  HND=601
+[09:15:32]   N=100 LEACH: 1.77s  HND=711
+[09:15:34]   N=100 HEED: 1.35s  HND=577
+[09:15:34]   N=100 PEGASIS: 0.1s  HND=60
+[09:16:08]   N=200 v3_flow: 34.66s  HND=579
+[09:16:12]   N=200 LEACH: 3.79s  HND=804
+[09:16:15]   N=200 HEED: 3.03s  HND=664
+[09:16:15]   N=200 PEGASIS: 0.12s  HND=33
+[09:19:17]   N=500 v3_flow: 182.08s  HND=552
+[09:19:28]   N=500 LEACH: 10.78s  HND=868
+[09:19:38]   N=500 HEED: 9.49s  HND=784
+[09:19:38]   N=500 PEGASIS: 0.18s  HND=10
+[09:19:38] 
+[09:19:38] Estimated total sweep time: 66.0 minutes
+[09:19:38] 
+[09:19:38] === FULL SWEEP ===
+[09:20:13]   N=30 v3_flow: mean=578.5  std=153.7  n=15  time=36.0s
+[09:20:23]   N=30 LEACH: mean=587.9  std=60.5  n=15  time=9.0s
+[09:20:29]   N=30 HEED: mean=565.7  std=61.1  n=15  time=7.0s
+[09:20:31]   N=30 PEGASIS: mean=165.0  std=13.0  n=15  time=2.0s
+[09:21:41]   N=60 v3_flow: mean=685.8  std=122.8  n=15  time=70.0s
+[09:21:58]   N=60 LEACH: mean=691.1  std=50.1  n=15  time=17.0s
+[09:22:11]   N=60 HEED: mean=592.5  std=41.3  n=15  time=13.0s
+[09:22:13]   N=60 PEGASIS: mean=94.8  std=5.5  n=15  time=2.0s
+[09:24:45]   N=100 v3_flow: mean=690.5  std=100.3  n=15  time=152.0s
+[09:25:14]   N=100 LEACH: mean=755.5  std=36.8  n=15  time=29.0s
+[09:25:36]   N=100 HEED: mean=625.5  std=34.0  n=15  time=22.0s
+[09:25:38]   N=100 PEGASIS: mean=61.8  std=5.8  n=15  time=2.0s
+[09:34:37]   N=200 v3_flow: mean=623.6  std=66.4  n=15  time=539.0s
+[09:35:35]   N=200 LEACH: mean=814.9  std=26.7  n=15  time=59.0s
+[09:36:26]   N=200 HEED: mean=688.7  std=26.2  n=15  time=50.0s
+[09:36:31]   N=200 PEGASIS: mean=28.1  std=2.8  n=15  time=6.0s
+[10:22:23]   N=500 v3_flow: mean=520.2  std=34.3  n=15  time=2752.0s
+[10:25:01]   N=500 LEACH: mean=845.8  std=21.0  n=15  time=157.0s
+[10:27:18]   N=500 HEED: mean=778.4  std=17.9  n=15  time=137.0s
+[10:27:20]   N=500 PEGASIS: mean=10.9  std=1.2  n=15  time=3.0s
+[10:27:20] 
+[10:27:20] === SUMMARY TABLE ===
+[10:27:20] N     v3_flow    LEACH     HEED      PEGASIS   v3/LEACH  v3/HEED
+[10:27:20] 30    578.5      587.9     565.7     165.0     0.984x    1.023x
+[10:27:20] 60    685.8      691.1     592.5     94.8      0.992x    1.157x
+[10:27:20] 100   690.5      755.5     625.5     61.8      0.914x    1.104x
+[10:27:20] 200   623.6      814.9     688.7     28.1      0.765x    0.906x
+[10:27:20] 500   520.2      845.8     778.4     10.9      0.615x    0.668x
+[10:27:20] 
+[10:27:20] === PAIRWISE SIGNIFICANCE, per N ===
+[10:27:20]   N=30 v3_flow vs LEACH: v3 loses  p=0.80344  d=-0.078  n.s.
+[10:27:20]   N=30 v3_flow vs HEED: v3 WINS  p=0.98345  d=0.106  n.s.
+[10:27:20]   N=30 v3_flow vs PEGASIS: v3 WINS  p=0.0  d=3.662  SIG
+[10:27:20]   N=60 v3_flow vs LEACH: v3 loses  p=0.66315  d=-0.054  n.s.
+[10:27:20]   N=60 v3_flow vs HEED: v3 WINS  p=0.04003  d=0.984  SIG
+[10:27:20]   N=60 v3_flow vs PEGASIS: v3 WINS  p=0.0  d=6.57  SIG
+[10:27:20]   N=100 v3_flow vs LEACH: v3 loses  p=0.08902  d=-0.831  n.s.
+[10:27:20]   N=100 v3_flow vs HEED: v3 WINS  p=0.05363  d=0.837  n.s.
+[10:27:20]   N=100 v3_flow vs PEGASIS: v3 WINS  p=0.0  d=8.547  SIG
+[10:27:20]   N=200 v3_flow vs LEACH: v3 loses  p=0.0  d=-3.651  SIG
+[10:27:20]   N=200 v3_flow vs HEED: v3 loses  p=0.00393  d=-1.245  SIG
+[10:27:20]   N=200 v3_flow vs PEGASIS: v3 WINS  p=0.0  d=12.238  SIG
+[10:27:20]   N=500 v3_flow vs LEACH: v3 loses  p=0.0  d=-11.063  SIG
+[10:27:20]   N=500 v3_flow vs HEED: v3 loses  p=0.0  d=-9.128  SIG
+[10:27:20]   N=500 v3_flow vs PEGASIS: v3 WINS  p=0.0  d=20.29  SIG
+[10:27:20] 
+[10:27:20] === TREND TEST: does the v3/LEACH and v3/HEED advantage GROW or SHRINK with N? ===
+[10:27:20] vs LEACH -- Spearman rho: -0.9  p=0.03739
+[10:27:20]   SIGNIFICANT decreasing trend vs LEACH -- advantage shrinks with N.
+[10:27:20] vs HEED  -- Spearman rho: -0.7  p=0.18812
+[10:27:20]   No significant monotonic trend vs HEED at this sample size.
+[10:27:20] 
+[10:27:20] === DONE ===

@@ -1,0 +1,7 @@
+tolerance=0.00: mean=239.7  std=86.9  n=20  time=294s
+tolerance=0.01: mean=239.7  std=86.9  n=20  time=293s
+tolerance=0.02: mean=254.4  std=103.8  n=20  time=263s
+tolerance=0.03: mean=242.8  std=79.8  n=20  time=232s
+tolerance=0.04: mean=247.9  std=79.7  n=20  time=220s
+
+reference: static=239.6  mincost=239.7  eqopt=226.4

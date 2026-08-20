@@ -1,0 +1,31 @@
+[06:16:25] === PROFILING: one episode per (N, strategy) before full sweep ===
+[06:16:26]   N=  30 static    : OK  time=0.9s  HND=227
+[06:16:28]   N=  30 eqopt     : OK  time=2.0s  HND=409
+[06:16:35]   N=  30 eqopt_k   : OK  time=7.0s  HND=400
+[06:16:38]   N= 200 static    : OK  time=2.3s  HND=74
+[06:17:03]   N= 200 eqopt     : OK  time=25.0s  HND=74
+[06:17:52]   N= 200 eqopt_k   : OK  time=49.8s  HND=109
+[06:17:59]   N= 500 static    : OK  time=6.3s  HND=128
+[06:19:24]   N= 500 eqopt     : OK  time=85.3s  HND=128
+[06:23:32]   N= 500 eqopt_k   : OK  time=247.7s  HND=130
+[06:23:32] 
+Estimated total sweep time: 85.3 minutes (based on single-episode profiling x 12 seeds)
+[06:23:32] 
+=== SCREENING SWEEP ===
+[06:23:42]   N=  30 static    : mean=389.4  std=175.2  n=12/12  timeouts=0  time=10s
+[06:24:06]   N=  30 eqopt     : mean=421.8  std=92.3  n=12/12  timeouts=0  time=24s
+[06:25:15]   N=  30 eqopt_k   : mean=475.8  std=177.2  n=12/12  timeouts=0  time=69s
+[06:25:44]   N= 200 static    : mean=135.1  std=47.6  n=12/12  timeouts=0  time=29s
+[06:30:57]   N= 200 eqopt     : mean=135.2  std=47.3  n=12/12  timeouts=0  time=312s
+[06:41:34]   N= 200 eqopt_k   : mean=150.7  std=44.4  n=12/12  timeouts=0  time=638s
+[06:42:48]   N= 500 static    : mean=71.4  std=24.8  n=12/12  timeouts=0  time=74s
+[06:59:04]   N= 500 eqopt     : mean=70.7  std=25.2  n=12/12  timeouts=0  time=976s
+[07:43:28]   N= 500 eqopt_k   : mean=70.2  std=25.6  n=12/12  timeouts=0  time=2664s
+[07:43:28] 
+=== SUMMARY: eqopt_k advantage over baselines, by N ===
+[07:43:28]     N    eqopt_k      eqopt     static   ek-eqopt  ek-static
+[07:43:28]    30      475.8      421.8      389.4       54.0       86.4
+[07:43:28]   200      150.7      135.2      135.1       15.5       15.6
+[07:43:28]   500       70.2       70.7       71.4       -0.5       -1.2
+[07:43:28] 
+Done. If ek-eqopt or ek-static grows (more positive) with N, that's a promising trend worth a full-powered follow-up at the most promising N. If flat or negative across N, likely confirms the N=100 null result generalizes and this line of investigation should close.

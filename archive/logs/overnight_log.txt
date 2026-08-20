@@ -1,0 +1,36 @@
+[16:22:07] === PRIORITY 1: HOLE-RISK VERIFICATION ===
+[16:59:26]   [holerisk_N100] computed  time=2238.0s
+[16:59:26]   N=100: mean_hole_rounds=1062.9  frac_episodes_with_any_hole=1.0
+[18:22:50]   [holerisk_N500] computed  time=5004.0s
+[18:22:50]   N=500: mean_hole_rounds=4259.5  frac_episodes_with_any_hole=1.0
+[18:22:50] 
+[18:22:50] === PRIORITY 2: BLEND AT N=500 (scoped) ===
+[19:18:48]   [blend_N500_alpha0.0] computed  time=3357.0s
+[19:18:48]   alpha=0.0: mean_HND=779.4  mean_Psi_max=0.14433
+[20:23:24]   [blend_N500_alpha0.5] computed  time=3876.0s
+[20:23:24]   alpha=0.5: mean_HND=621.8  mean_Psi_max=0.15833
+[20:46:44]   [blend_N500_alpha1.0] computed  time=1401.0s
+[20:46:44]   alpha=1.0: mean_HND=531.0  mean_Psi_max=0.11736
+[20:46:44] 
+[20:46:44] === PRIORITY 3: B/C/D EXTENDED N-SWEEP ===
+[20:46:44] --- B: energy sensitivity, N=200,500 for E0=0.5,2.0 ---
+[20:50:36]   [B_N200_E0_0.5] computed  time=232.0s
+[20:50:36]   N=200 E0=0.5: {'mincost_v3': np.float64(377.4), 'static_CT': np.float64(306.4), 'LEACH': np.float64(403.8), 'HEED': np.float64(342.1)}
+[21:17:42]   [B_N200_E0_2.0] computed  time=1626.0s
+[21:17:42]   N=200 E0=2.0: {'mincost_v3': np.float64(1500.1), 'static_CT': np.float64(1226.9), 'LEACH': np.float64(1616.5), 'HEED': np.float64(1350.4)}
+[22:05:03]   [B_N500_E0_0.5] computed  time=2841.0s
+[22:05:03]   N=500 E0=0.5: {'mincost_v3': np.float64(387.8), 'static_CT': np.float64(261.4), 'LEACH': np.float64(428.9), 'HEED': np.float64(393.6)}
+[00:19:00]   [B_N500_E0_2.0] computed  time=8036.0s
+[00:19:00]   N=500 E0=2.0: {'mincost_v3': np.float64(1543.2), 'static_CT': np.float64(1047.5), 'LEACH': np.float64(1684.5), 'HEED': np.float64(1541.9)}
+[00:19:00] 
+[00:19:00] --- C: sink topology, N=200,500 for edge,corner ---
+[00:37:13]   [C_N200_edge] computed  time=1094.0s
+[00:37:13]   N=200 edge: {'mincost_v3': np.float64(350.1), 'static_CT': np.float64(308.8), 'LEACH': np.float64(496.9), 'HEED': np.float64(455.9)}
+[00:48:36]   [C_N200_corner] computed  time=683.0s
+[00:48:36]   N=200 corner: {'mincost_v3': np.float64(156.9), 'static_CT': np.float64(138.9), 'LEACH': np.float64(320.4), 'HEED': np.float64(327.6)}
+[02:37:49]   [C_N500_edge] computed  time=6553.0s
+[02:37:49]   N=500 edge: {'mincost_v3': np.float64(337.6), 'static_CT': np.float64(233.6), 'LEACH': np.float64(519.4), 'HEED': np.float64(504.6)}
+[05:08:39]   [C_N500_corner] computed  time=9050.0s
+[05:08:39]   N=500 corner: {'mincost_v3': np.float64(156.2), 'static_CT': np.float64(111.2), 'LEACH': np.float64(328.5), 'HEED': np.float64(355.0)}
+[05:08:39] 
+[05:08:39] --- D: R_h correlation, N=500 (only N=100 tested so far) ---
